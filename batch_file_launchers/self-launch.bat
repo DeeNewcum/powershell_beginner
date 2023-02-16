@@ -1,4 +1,4 @@
-@powershell -noninteractive "& ([Scriptblock]::Create( ((gc -raw '%~df0') -replace '^@powershell.*' ) )) %*" || pause & goto :eof 
+@powershell "& ([Scriptblock]::Create( ((gc -raw '%~df0') -replace '^@powershell.*' ) )) %*" || pause & goto :eof 
 ###
 ### The first line is a batch file, the rest of this file is a PowerShell script. Magic!
 ###
